@@ -33,22 +33,11 @@
      rm -rf baseconfig
      cd multitheftauto_linux${ARCH_TYPE}
  }
-  
- installResources()
- {
-     mkdir mods/deathmatch/resources
-     mkdir mods/deathmatch/resources/[Defaults]
-     cd mods/deathmatch/resources/[Defaults]
-     wget http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip
-     unzip mtasa-resources-latest.zip
-     cd ../../..
- }
-  
+
  clean()
  {
      rm -f ../multitheftauto_linux${ARCH_TYPE}.tar.gz
      rm -f ../baseconfig.tar.gz
-     rm -f mods/deathmatch/resources/[Defaults]/mtasa-resources-latest.zip
  }
   
  main()
@@ -58,7 +47,6 @@
      downloadFiles
      unpack
      moveConfig
-     installResources
      clean
   
      if ((1<<32)); then # 64 bits
