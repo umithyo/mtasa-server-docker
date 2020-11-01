@@ -36,6 +36,7 @@
   
  installResources()
  {
+     mkdir mods/deathmatch/resources
      mkdir mods/deathmatch/resources/[Defaults]
      cd mods/deathmatch/resources/[Defaults]
      wget http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip
