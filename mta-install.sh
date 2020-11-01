@@ -36,7 +36,10 @@
   
  installResources()
  {
-     mkdir mods/deathmatch/resources
+     mkdir mods/deathmatch/resources/[Defaults]
+     cd mods/deathmatch/resources/[Defaults]
+     wget http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip
+     unzip mtasa-resources-latest.zip
      cd ../../..
  }
   
@@ -44,6 +47,7 @@
  {
      rm -f ../multitheftauto_linux${ARCH_TYPE}.tar.gz
      rm -f ../baseconfig.tar.gz
+     rm -f mods/deathmatch/resources/mtasa-resources-latest.zip
  }
   
  main()
