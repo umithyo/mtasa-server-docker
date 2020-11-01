@@ -47,7 +47,7 @@
  {
      rm -f ../multitheftauto_linux${ARCH_TYPE}.tar.gz
      rm -f ../baseconfig.tar.gz
-     rm -f mods/deathmatch/resources/mtasa-resources-latest.zip
+     rm -f mods/deathmatch/resources/[Defaults]/mtasa-resources-latest.zip
  }
   
  main()
