@@ -17,7 +17,7 @@
   
  downloadFiles()
  {
-     wget http://linux.mtasa.com/dl/multitheftauto_linux${ARCH_TYPE}.tar.gz
+     wget https://nightly.mtasa.com/multitheftauto_linux_x64-1.5.8-rc-20779.tar.gz
      wget http://linux.mtasa.com/dl/baseconfig.tar.gz
  }
   
