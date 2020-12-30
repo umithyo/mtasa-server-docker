@@ -23,20 +23,20 @@
   
  unpack()
  {
-     tar -xf multitheftauto_linux${ARCH_TYPE}.tar.gz
+     tar -xf multitheftauto_linux_x64-1.5.8-rc-20779.tar.gz
      tar -xf baseconfig.tar.gz
  }
   
  moveConfig()
  {
-     mv baseconfig/* multitheftauto_linux${ARCH_TYPE}/mods/deathmatch
+     mv baseconfig/* multitheftauto_linux_x64-1.5.8-rc-20779/mods/deathmatch
      rm -rf baseconfig
-     cd multitheftauto_linux${ARCH_TYPE}
+     cd multitheftauto_linux_x64-1.5.8-rc-20779
  }
 
  clean()
  {
-     rm -f ../multitheftauto_linux${ARCH_TYPE}.tar.gz
+     rm -f ../multitheftauto_linux_x64-1.5.8-rc-20779.tar.gz
      rm -f ../baseconfig.tar.gz
  }
   
