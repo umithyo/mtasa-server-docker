@@ -12,7 +12,7 @@ inotifywait -q -r -m -e close_write,moved_to . --format "%w %f" |
       # Compile if lua file
       if [ ${i: -4} == ".lua" ]; then
         #cp $i $i$BAK
-       /app/luac_mta -s -e2 -o $i$EXT $i
+       /app/luac_mta -s -e3 -o $i$EXT $i
         echo "[Compiling] $i"
       fi
     fi
